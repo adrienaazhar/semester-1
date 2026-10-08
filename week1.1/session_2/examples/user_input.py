@@ -1,7 +1,7 @@
-name = input("Please enter your name: ")
+name = input("Adriena")
 
-print(f"Hi, {name}")
+print(f"Hi, my name is{name}")
 
-num = int(input("Enter a number: "))
+num = int(input("19 "))
 
 print(f"Wow, {num}? Cool.")
