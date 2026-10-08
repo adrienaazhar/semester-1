@@ -14,7 +14,13 @@ food = fruit.union(vegetables)
 print(food)
 
 # Add an item to fruit
+fruit.add("grapes")
+print(fruit)
 
 # Remove an item from vegetables
+vegetables.discard("leek")
+print(vegetables)
 
 # Find and display symmetric difference of the two sets
+cooking = fruit.symmetric_difference(vegetables)
+print(cooking)
