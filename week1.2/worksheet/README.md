@@ -8,8 +8,8 @@ them to Gradescope for grading.
 Edit the file named `task1.py`. In this file, write a program that
 
 * Asks users to enter an integer grade in the range 0 to 100
-
-* Converts that grade into a result of Pass, Fail or Distinction, where
+Converts that grade into a result of Pass, Fail or Distinction
+* , where
 
   - Fail = 0-39
   - Pass = 40-69
@@ -26,7 +26,8 @@ If the user enters something that isn't a number, or they enter an integer
 value outside the required range, the program should immediately exit, after
 first displaying this exact error message on the standard error channel:
 
-    Error: Grade must be an integer between 0 and 100
+    sys.exit("Error!Grade must be an integer between 0 and 100")
+
 
 Use the `exit()` function from Python's `sys` module to achieve this. Here
 is an example of how you import this module and use the `exit()` function:
