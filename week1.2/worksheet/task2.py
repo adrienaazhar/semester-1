@@ -1,4 +1,6 @@
 # Worksheet 1.2: Task Solution
+
+
 from util import read_numbers
 import sys
 
