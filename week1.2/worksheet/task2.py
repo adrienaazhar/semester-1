@@ -2,27 +2,28 @@
 from util import read_numbers
 import sys
 
-try :
-    numbers = read_numbers()
 
-    minimum = min(numbers)
-    maximum = max(numbers)
-    mean = sum(numbers) / len(numbers)
+numbers = read_numbers()
 
-    numbers.sort()
-    middle = len(numbers)// 2
+if len(numbers) == 0:
+    sys.exit("Error: no numbers provided") 
 
-    if len(numbers) % 2 == 1:
-        median = numbers[middle]
+minimum = min(numbers)
+maximum = max(numbers)
+mean = sum(numbers) / len(numbers)
 
-    else:
-        median = (numbers[middle-1] + numbers[middle]) / 2
+numbers.sort()
+middle = len(numbers) // 2
 
-    print(f"Minimum = {minimum}")
-    print(f"Maximun = {maximum}")
-    print(f"Mean = {mean}")
-    print(f"Median = {median}")
+if len(numbers) % 2 == 1:
+    median = numbers[middle]
 
-except ValueError:
-    if len(numbers) == 0:
-        sys.exit("Error: no numbers provided") 
+else:
+    median = (numbers[middle-1] + numbers[middle]) / 2
+
+print(f"Minimum = {minimum}")
+print(f"Maximun = {maximum}")
+print(f"Mean = {mean}")
+print(f"Median = {median}")
+
+    
