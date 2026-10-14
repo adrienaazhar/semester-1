@@ -1,14 +1,12 @@
 # Worksheet 1.2: Task Solution
 
-
 from util import read_numbers
 import sys
-
 
 numbers = read_numbers()
 
 if len(numbers) == 0:
-    sys.exit("Error: no numbers provided") 
+    sys.exit("Error: no numbers provided")
 
 minimum = min(numbers)
 maximum = max(numbers)
@@ -19,13 +17,10 @@ middle = len(numbers) // 2
 
 if len(numbers) % 2 == 1:
     median = numbers[middle]
-
 else:
-    median = (numbers[middle-1] + numbers[middle]) / 2
+    median = (numbers[middle - 1] + numbers[middle]) / 2
 
 print(f"Minimum = {minimum}")
-print(f"Maximun = {maximum}")
+print(f"Maximum = {maximum}")
 print(f"Mean = {mean}")
 print(f"Median = {median}")
-
-    
