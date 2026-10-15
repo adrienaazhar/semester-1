@@ -21,3 +21,5 @@ Significance: The introduction of plastic frames made eyeglasses more lightweigh
 21st Century: Advanced Materials and Technology
 Date: 21st century
 Significance: Modern eyeglasses now use advanced materials like polycarbonate and high-index plastics. Advancements in lens technology, such as anti-reflective coatings and photochromic lenses, have further improved the comfort and functionality of eyeglasses.
+
+file.readlines()

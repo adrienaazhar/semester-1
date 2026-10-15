@@ -13,5 +13,8 @@ for i in values:
 
 print(newval)
 
+values_2 = []
+
+
 # write the list comprehension equivalent to the `for` loop
 
