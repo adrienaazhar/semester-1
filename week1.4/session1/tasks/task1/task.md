@@ -8,3 +8,7 @@ Look up documentation on the 'input()' function
 - think about the description of the data and also the type
 
 Write a small program to test the function
+
+name = input("Enter your name : ")
+print(name)
+

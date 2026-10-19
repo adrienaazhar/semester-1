@@ -8,3 +8,14 @@ Look up documentation on the 'intersection()' method
 - think about the description of the data and also the type
 
 Write a small program to test the method
+
+setA = {"banana", "apple", "grapes", "durian"}
+print(setA)
+
+setB = {"durian", "mango", "lemon"}
+print(setB)
+
+int_set = setA.intersection(setB)
+print(int_set)
+
+
