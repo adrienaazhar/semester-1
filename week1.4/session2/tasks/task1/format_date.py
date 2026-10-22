@@ -8,8 +8,11 @@
 
 def format_data(day, month, year, separator):
     # complete your code here
+    formatted_date = f"{day}{separator}{month}{separator}{year}"
 
     return formatted_date
+
+print(format_data(22, 8, 2026, "/"))
 
 
 # Write code to test the function with separators such as "/", ":", "."

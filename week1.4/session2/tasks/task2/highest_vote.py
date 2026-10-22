@@ -21,6 +21,21 @@ def most_frequent_string(votes):
     # Hint 1: You can complete this task with for loops or comprehensions 
     # Hint 2: Think about the properties of the various collection-types
 
+    if not votes:
+        return(None, None)
+
+    counts ={}
+
+    for vote in votes:
+        if vote in counts:
+            counts[vote] += 1
+        else:
+            counts[vote] = 1
+
+#Find the string with the highest count
+    most_frequent = max(counts, key = counts.get)
+
+    return(most_frequent, counts[most_frequent])
 
 fruit = ['date', 'apple', 'cherry', 'date', 'apple', 'apple', 'elderberry',
          'date', 'elderberry', 'elderberry', 'date', 'banana']
