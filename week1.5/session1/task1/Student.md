@@ -1,11 +1,11 @@
 # Student Class
 class Student: 
 ## Attributes (state)
-    def student_attributes(student, name, age, ID, course):
-        student.name = "Adriena"
-        student.age = 19
-        student.ID = 202923514
-        student.course = "Computer Science"
+    def __init__(student, name, age, ID, course):
+        student.name = name
+        student.age = age
+        student.ID = ID
+        student.course = course
     
 
 ## Behaviour (methods)
@@ -18,4 +18,13 @@ class Student:
     def display_information(student):
         print("Name:", student.name)
         print("Age:", student.age)
-        print()
+        print("Student ID:", student.ID)
+        
+#Create a student
+s1 = Student("Adriena", 19, 2025461396, "Computer Science")
+
+#call the behaviour
+s1.study()
+s1.classes()
+s1.display_information()
+
