@@ -12,3 +12,9 @@ print(clean_emails)
 # Optional - consider the case where some of the emails are not valid (i.e., without the @ in the email address).
 # raw_emails2 = ["UserA@gmail.com", "SYSTEM_ALERT", "usera@gmail.com", "admin@site.com", "UserB@yahoo.com"]
 # write another set comprehension for this case to extract a clean, unique set of valid, lowercase email addresses
+#List = keeps duplicates.
+#Set = removes duplicates automatically.
+
+raw_emails2 = ["UserA@gmail.com", "SYSTEM_ALERT", "usera@gmail.com", "admin@site.com", "UserB@yahoo.com"]
+clean_emails2 ={s.lower() for s in raw_emails2 if "@" in s}
+print(clean_emails2)

@@ -10,7 +10,9 @@ while i < 20:
     print(i)
     i = i + 1
 
-   
+#Continue - when we run it, it will not print the number that is divisible by 3, instead it will print the number that  
+#is not divible by 3
+
 
 # Add logic using continue so that multiples of 3 are not printed out
 # Hint: we discused operators such as % and // in recent weeks
