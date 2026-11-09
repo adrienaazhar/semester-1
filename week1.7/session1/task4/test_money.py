@@ -26,11 +26,17 @@ def test_add_invalid_type():
 def test_invalid_type_pence():
     # complete the test implementation for 
     # invalid type for pence
+    with pytest.raises(TypeError) as excinfo:
+        Money(1, 89.1)
+    assert str(excinfo.value) == "value must be in integer"
     
 
 def test_invalid_value_pence():
     # complete the test implementation for 
     # invalid value for pence
+    with pytest.raises(ValueError) as excinfo:
+        Money(2, 100)
+    assert str(excinfo.value) == "value must be in the range of 1-99"
     
 
 def test_valid_add():
@@ -38,4 +44,7 @@ def test_valid_add():
     # valid add between money objects
     # Hint: you can compare using the __str()__ (
     # e.g., str(m1 + m2) == "£2.04"
-    
+    m1 = Money(2, 30)
+    m2 = Money(1, 50)
+
+    assert str(m1 + m2) == "£3.80"
