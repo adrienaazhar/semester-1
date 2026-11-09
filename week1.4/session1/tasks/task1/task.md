@@ -9,6 +9,7 @@ Look up documentation on the 'input()' function
 
 Write a small program to test the function
 
-name = input("Enter your name : ")
-print(name)
 
+    name = input("Enter your name : ")
+    print(name)
+ 
