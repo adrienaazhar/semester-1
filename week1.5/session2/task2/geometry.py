@@ -33,7 +33,7 @@ class Point:
 
     # Implement a __str__() method here
 
-    def __string__(self):
+    def __str__(self):
         """
         Returns string representation of this Point.
         """
@@ -69,8 +69,8 @@ class Circle:
         return 2.0 * math.pi * self.radius
 
     # Implement a __str__() method here
-    def __string__(self):
+    def __str__(self):
         """
         Returns string representation of this Point.
         """
-        return f"({self.x}, {self.y})"
+        return f"({self.radius}, {self.centre})"
