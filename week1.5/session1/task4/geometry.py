@@ -54,8 +54,8 @@ class Circle:
     """
     A Circle that has radius and centre.
     """
-    def __init__(self, radius, centre)
-    - A constructor that creates fields to represent the centre & radius
+    def __init__(self, radius, centre):
+    #- A constructor that creates fields to represent the centre & radius
 #    of a circle (assume centre is represented as a Point object)
         """
         Creates a Circle with a given radius and centre.
@@ -65,6 +65,9 @@ class Circle:
 
 #  
 #  - A method area(), returning the area of the circle
+    def area(self):
+        return math.pi * self.radius ** 2
 #  - A method perimeter(), returning the perimeter of the circle
-
+    def perimeter(self):
+        return 2 * math.pi *self.radius
 # Don't add any testing code to this file!

@@ -31,3 +31,13 @@ print(digits_sum(12345))  # Output: 15
 
 
 # Once completed, your next task is to write an equivalent function that uses loops.
+def digits_sum(number):
+    total = 0
+
+    while number>0:
+        digit = number % 10
+        total = total + digit
+        number = number // 10
+
+    print(digits_sum(987))
+    print(digits_sum(12345))
