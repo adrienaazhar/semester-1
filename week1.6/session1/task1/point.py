@@ -33,11 +33,6 @@ class Point:
         """
         return math.hypot(self.x - p.x, self.y - p.y)
         
-        #Test
- p = Point(1, 2)
- q = Point(1, 2)
-
- if p == q:
-    return True
+        
 
 
