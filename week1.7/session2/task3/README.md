@@ -82,7 +82,7 @@ Before executing this line, check the value and data type of price using `p` or 
 	(Pdb) p price
 	'20'
 
-The single quotes around '20' prove that it is a string, not a number. 
+The single quotes n around '20' prove that it is a string, not a number. 
 This explains why multiplying it by the float 0.05 causes a `TypeError`.
 
 If you type `n` again, it will raise the `TypeError`.
